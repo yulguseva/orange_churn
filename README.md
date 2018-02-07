@@ -1,4 +1,4 @@
-# Outline
+# Classification problem on Orange data
 
 The data was taken from the KDD Cup 2009, which is a marketing database from the French Telecom company Orange. The challenge is to predict the propensity of customers to switch provider (churn). This is a classification problem on anonymized, unbalanced data with lots of missing values, and there is also a particular interest in finding a measure that reflects the economic impact of ML models.    
 
