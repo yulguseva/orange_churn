@@ -23,7 +23,7 @@ Anonymized data on 40000 users with 190 numeric features and 40 categorical feat
 *	Encoding with densities
 *	Data scaling
 *	Filling missing values
-*	Rebalancing
+*	Weighting
 ### Performance Score
 AUC ROC was used as performance score, as it reflects TPR and FPR. TPR is important for understanding how many churn users are identified and FPR is related to the economical impact (retention is costly).
 Baseline modeling:
