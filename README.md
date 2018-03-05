@@ -43,5 +43,5 @@ Gradient Boosting parameters:
 *	max_depth: 3
 ### Further Research
 *	Feature engineering 
-*	Using of model ensemble
+*	Ensembling different models and making meta-models
 *	Manage outliers in numerical features
