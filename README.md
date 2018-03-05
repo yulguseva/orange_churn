@@ -1,6 +1,10 @@
 # Classification on Orange data
 
-The data was taken from the KDD Cup 2009, which is a marketing database from the French Telecom company Orange. The challenge is to predict the propensity of customers to switch provider (churn). This is a classification problem on anonymized, unbalanced data with lots of missing values, and there is also a particular interest in finding a measure that reflects the economic impact of ML models.    
+Data from KDD CUP 2009 provided by telecomunication corporation Orange S.A. Data contains 50000 examples and 230 features, the first 190 features are numerical and the last 40 are categorical. The task is to estimate the churn probability of customers (classification problem on unbalanced data). The performance metric is AUC ROC.
+
+The public data was used in Kaggle competition https://www.kaggle.com/c/telecom-clients-churn-prediction/data. The 50000 examples are splitted into train data (40000 examples) and test data (10000 examples). Competitors don't have access to the test labels so the test data is not supposed to be used in model fitting, but in performance evaluation.
+
+This is a classification problem on anonymized, unbalanced data with lots of missing values, and there is also a particular interest in finding a measure that reflects the economic impact of ML models.    
 
 ## Dataset
 Anonymized data on 40000 users with 190 numeric features and 40 categorical features. Data is unbalanced and contains lots of missing values. 
@@ -8,16 +12,16 @@ Anonymized data on 40000 users with 190 numeric features and 40 categorical feat
 1.	Statistical analysis and visualization
 2.	Selection of performance score  
 3.	Data preprocessing
-4.	Baseline modeling (Regression, Random Forest, Gradient Boosting, kNN, Bayes) 
+4.	Choosing a baseline model from a set of popular classifiers (Logistic regression, Random Forest, Gradient Boosting, Bayes) 
 5.	Feature selection 
 6.	Model parameters fitting via cross validation 
 7.	Model adequacy check on a test set
 8.	Analysis of economic impact
 ### Preprocessing
-*	OneHotEncoding
 *	Hashing
+* OneHotEncoding
 *	Encoding with densities
-*	Normalization/ scaling
+*	Data scaling
 *	Filling missing values
 *	Rebalancing
 ### Performance Score
@@ -34,8 +38,8 @@ Best preprocessing tactic was to encode categorical features with densities, fil
 
 Gradient Boosting parameters:
 *	loss: ‘deviance’
-*	learning_rate: 0.1
-*	n_estimators: 100
+*	learning_rate: 0.03
+*	n_estimators: 450
 *	max_depth: 3
 ### Further Research
 *	Feature engineering 
